@@ -9,7 +9,7 @@ body{
     background-color: #141414;
     border-radius: 20px;
     padding: 35px 40px;
-    width: 780px;
+    
 
 
 }
@@ -32,7 +32,7 @@ header .column{
 .volume-slider input{
     accent-color: #fff;
 }
-.keys-check-box input{
+.keys-checkbox input{
     appearance: none;
     width: 60px;
     height: 30px;
@@ -41,7 +41,7 @@ header .column{
     border-radius: 30px;
     position: relative;
 }
-.keys-check-box input::before{
+.keys-checkbox input::before{
     content: '';
     position: absolute;
     background-color: #fff;
@@ -54,7 +54,7 @@ header .column{
     transition: all 0.5s ease-in-out;
 
 }
-.keys-check-box input:checked::before{
+.keys-checkbox input:checked::before{
     left: 35px;
     
     background-color: #a58585;
@@ -82,8 +82,14 @@ position: relative;
     border:1px solid black;
 
 }
-.piano-keys .white:active{
+.piano-keys .white.active{
     background: linear-gradient(#fff 0%,#000 );
+    box-shadow: inset -5px -5px 20px rgba(0,0,0,0.2);
+    color: white;
+
+}
+.piano-keys .black.active{
+    background: linear-gradient(#4b4b4b,#000 30%  );
     box-shadow: inset -5px -5px 20px rgba(0,0,0,0.2);
     color: white;
 
@@ -106,4 +112,7 @@ color: rgb(22, 20, 20);
 .piano-keys .black span{
 color: rgb(238, 231, 231);
     
+}
+.piano-keys .key.hide span{
+    display: none;
 }
