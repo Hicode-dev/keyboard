@@ -2,9 +2,9 @@ const PainoKeys = document.querySelectorAll('.piano-keys .key')
 const VolumeSlider = document.querySelector('.volume-slider input')
 const CheckBox= document.querySelectorAll('.keys-checkbox input')
 
-let audio = new Audio('a.ogg')
+let audio = new Audio('a.wav')
 const playtune = (key)=>{
-    audio.src = `${key}.ogg`
+    audio.src = `${key}.wav`
 audio.play();
 
 const clickedKey = document.querySelector(`[data-key="${key}"]`)
