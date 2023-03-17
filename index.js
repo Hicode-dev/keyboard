@@ -34,6 +34,6 @@ const HandleVolume = (e) =>{
     audio.volume = e.target.value;
 }
 
-document.addEventListener('keydown',pressedKey)
+document.addEventListener('keypress',pressedKey)
 document.addEventListener('click',handleKeys)
 document.addEventListener('input',HandleVolume)
